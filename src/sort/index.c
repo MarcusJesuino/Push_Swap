@@ -82,6 +82,7 @@ static int	find_pos(int *arr, int n, int value)
 	}
 	return (-1);
 }
+
 /*
 ** Assigns sorted indexes to nodes.
 ** Converts stack to array, sorts it,

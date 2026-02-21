@@ -37,6 +37,7 @@ static int	get_max_bits(t_stack *a)
 		bits++;
 	return (bits);
 }
+
 /*
 ** Processes one specific bit.
 ** Bit 0 elements go to stack B,
@@ -59,6 +60,7 @@ static void	radix_pass(t_stack **a, t_stack **b, int bit, int size)
 	while (*b)
 		pa(a, b);
 }
+
 /*
 ** Main algorithm for large inputs.
 ** Sorts elements using index bits.
@@ -70,7 +72,6 @@ void	radix_sort(t_stack **a, t_stack **b)
 	int	bit;
 	int	max_bits;
 	int	size;
-
 
 	max_bits = get_max_bits(*a);
 	size = stack_size(*a);

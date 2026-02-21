@@ -21,6 +21,7 @@ static void	free_split(char **sp)
 		free(sp[i++]);
 	free(sp);
 }
+
 /*
 ** Counts how many numbers exist
 ** across all program arguments.
@@ -37,6 +38,7 @@ static int	count_total_tokens(int ac, char **av)
 		total += count_words(av[i++]);
 	return (total);
 }
+
 /*
 ** Builds stack A from the integer array.
 ** Creates nodes and appends them
@@ -57,6 +59,7 @@ static void	build_stack(t_stack **a, int *vals, int total)
 		i++;
 	}
 }
+
 /*
 ** Iterates through all arguments.
 ** Splits strings into tokens,

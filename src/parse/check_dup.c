@@ -81,6 +81,7 @@ static void	check_neighbors(int *arr, int total, t_stack **a, int *vals)
 		i++;
 	}
 }
+
 /*
 ** Detects duplicated values.
 ** Copies and sorts the array,

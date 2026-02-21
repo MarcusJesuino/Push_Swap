@@ -47,6 +47,7 @@ static int	check_limit_next(long res, int sign, int digit)
 		return (0);
 	return (1);
 }
+
 /*
 ** Safe string-to-int conversion.
 ** Detects overflow and underflow
